@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tech A Hike</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Catamaran|Roboto&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/f3f6e950df.js" crossorigin="anonymous"></script>
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="branding">TECH A HIKE</h1>
+    <nav>
+      <h3 class="instructions">Choose Your Tech Hub</h3>
+      <section class="city-carousel">
+        <div class="city current">
+          <p class="city-link" data-city="saltLakeCity">Salt Lake City</p>
+        </div>
+        <div class="city">
+          <p class="city-link" data-city="seattle">Seattle</p>
+        </div>
+        <div class="city">
+          <p class="city-link" data-city="sanJose">San Jose</p>
+        </div>
+        <div class="city">
+          <p class="city-link" data-city="atlanta">Atlanta</p>
+        </div>
+        <div class="city">
+          <p class="city-link" data-city="raleigh">Raleigh</p>
+        </div>
+        <div class="city">
+          <p class="city-link" data-city="austin">Austin</p>
+        </div>
+      </section>
+
+      <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
+      </div> 
+
+    </nav>
+  </header>
+  <main class="content">
+
+    <!-- This will only show when the page is first loaded -->
+    <section class="landing-page">
+      <article class="app-description">This app provides you the motivation and location to step away from your code every once in a while and go for a hike. Clearing your mind and getting a little exercise may be just what you need to solve your software issue.</article>
+      <img class="landing-page-photo" src="https://images.pexels.com/photos/2450296/pexels-photo-2450296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="man hiking in mountains">
+    </section>
+
+    <!--will make my sections/cities render dynamically--> 
+    <section class="city-container">
+      <img class="landing-page-photo" src="https://images.pexels.com/photos/2450296/pexels-photo-2450296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="man hiking in mountains">
+      <ul class= "hike-list">
+        
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <ul class="footer-list">
+      <li>&copy Copyright 2020. Digital Nematodes</li>
+      <li><a class="footer-links" href="#">Twitter</a></li>
+      <li><a class="footer-links" href="#">Instagram</a></li>
+      <li><a class="footer-links" href="#">Legal</a></li>
+    </ul>
+  </footer>
+
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+:root {
+  --main-color: #DFDAD7;
+  --main-dark: #4F3824;
+  --main-light: #59C9A5;
+  --main-light-opaque: rgba(89, 201, 165, 0.25);
+  --main-splash: #FE6847;
+  --main-medium: #BFB6AF;
+  --main-print: darkslategrey;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.main-header {
+  /* border: 5px solid papayawhip; */
+}
+
+.branding {
+  color: var(--main-splash);
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4rem;
+  text-align: center;
+  /* border: 2px solid blue; */
+  background-image: url("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  box-shadow: 2px 2px 10px var(--main-splash);
+}
+
+nav {
+  margin: 2rem;
+  position: relative;
+}
+
+.instructions {
+  text-align: center;
+  color: var(--main-print);
+  margin: 1rem;
+}
+
+
+/* --- Carousel --- */
+.city-carousel {
+  overflow: hidden;
+  display: relative;
+  border: 2px solid var(--main-dark);
+  background-color: var(--main-medium);
+  box-shadow: 2px 2px 10px var(--main-dark);
+}
+
+.city {
+  color: var(--main-dark);
+  text-align: center;
+  display: none;
+  transition: display 0.4s ease-in-out;
+}
+
+.city-link {
+  text-decoration: none;
+  color: var(--main-dark);
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.city-link:hover {
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.current {
+  min-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.buttons button {
+  /* border: 2px solid var(--main-splash); */
+  border: none;
+  border-radius: 50%;
+  opacity: 0.8;
+  background-color: var(--main-medium); 
+  color: var(--main-splash);
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: var(--main-light);
+  color: var(--main-dark);
+}
+
+.buttons button#prev {
+  font-size: 20px;
+  position: absolute;
+  top: 2.7rem;
+  left: 1rem;
+  transition: all .3s ease-in-out;
+}
+
+.buttons button#next {
+  font-size: 20px;
+  position: absolute;
+  top: 2.7rem;
+  right: 1rem;
+  transition: all .3s ease-in-out;
+}
+
+
+/* Main body of app css */
+.content {
+  margin: 2rem;
+}
+
+.landing-page {
+  border: 4px solid var(--main-light);
+  position: relative;
+  /* box-shadow: 5px 5px 20px var(--main-dark); */
+  display: none;
+}
+
+.app-description {
+  padding: 2rem;
+  color: var(--main-print);
+  font-family: 'catamaran', sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--main-light-opaque);
+}
+
+.landing-page-photo {
+  max-width: 100%;
+  display: block;
+  /* position: absolute;
+  top: 7rem;
+  left: 0; */
+}
+
+
+/* Tech Hubs */
+.city-container {
+  border: 2px solid var(--main-light);
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.active-city {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hike {
+  list-style: none;
+  border: 2px solid var(--main-dark);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.hike-link {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+footer {
+  background: var(--main-medium);
+  padding: 2rem;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.footer-links {
+  margin: 1rem;
+}
+
+
+
+
+
